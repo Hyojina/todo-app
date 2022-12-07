@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 스타일 초기화-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stylish&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS, JS 파일 연결 -->
+    <link rel="stylesheet" href="./main.css" />
+    <script defer src="./main.js"></script>
+    <title>오늘의 할 일</title>
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header>
+      <div class="container--header">
+        <a href="./index.html"> <div class="logo"></div></a>
+        <a href="./index.html"> <h1 class="title">오늘의 할 일</h1></a>
+      </div>
+      <p>
+        일하지 않는 자, 먹지도 말랬다! <br />
+        해야할 일을 작성하고 다 한 것은 체크해보자
+      </p>
+    </header>
+
+    <!-- 검색 -->
+    <div class="container--search">
+      <input class="input-box" type="text" placeholder="할 일을 입력하자" />
+      <div class="add-button button" class="button">추가</div>
+    </div>
+    <!-- 옵션 -->
+    <div class="container--option">
+      <div class="option--done">
+        <input type="radio" name="done" value="all" checked />모두 표시
+        <input type="radio" name="done" value="true" />다 끝낸거!
+        <input type="radio" name="done" value="false" />진행중..
+      </div>
+      <div class="all-delete-button button">모두 지우기</div>
+    </div>
+    <!-- 메인 -->
+    <!-- 결과 -->
+    <main>
+      <div class="container--list">
+        <div class="list"></div>
+        <div class="loading hidden">로딩중...</div>
+        <div class="nothing hidden">아무것도...</div>
+      </div>
+    </main>
+    <footer>
+      만든이: 김효진
+      <iframe
+        class="music"
+        width="30"
+        height="30"
+        src="https://www.youtube.com/embed/Eb-JAjWSxkI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </footer>
+  </body>
+</html>
